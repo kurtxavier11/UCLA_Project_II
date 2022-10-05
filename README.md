@@ -1,5 +1,6 @@
-### UCLA Project 2
+# UCLA Project 2
 ## Red vs. Blue Engagement
+### by Kurt Anderson
 
 In this project I will work on a Red Team vs. Blue Team scenario in which I will play the roles of both Pentester and Security Operations Center Analyst.
 
