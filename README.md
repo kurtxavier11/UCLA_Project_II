@@ -10,6 +10,7 @@ As the Blue Team, I will use Kibana to review logs taken during the Red Team eng
 Day 1 Activity File: Red Team
 Instructions
 Complete the following to find the flag:
+
 ●	Discover the IP address of the Linux web server.
 	nmap -v 192.168.1.0/24 
   
