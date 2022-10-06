@@ -73,6 +73,7 @@ Day 2 Activity File: Incident Analysis with Kibana
 After creating your dashboard and becoming familiar with the search syntax, use these tools to answer the questions below:
 
 1.	Identify the offensive traffic.
+![Dashboard](https://github.com/kurtxavier11/UCLA_Project_II/blob/main/images/Kibana_analysis.PNG)
 
 ○	Identify the traffic between your machine and the web machine:
 
