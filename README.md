@@ -38,7 +38,7 @@ Using the username and password I was able to log into the host and found a Pers
 
 Command:
 
-	hydra -l ashton -P /usr/share/wordlists/rockyou.txt webdav://192.168.1.90/
+	hydra -l ashton -P /usr/share/wordlists/rockyou.txt webdav://192.168.1.90:80/
 
 ![Personal Note:](https://github.com/kurtxavier11/UCLA_Project_II/blob/main/images/personal_note.jpg)
 
