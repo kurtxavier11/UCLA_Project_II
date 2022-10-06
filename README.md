@@ -71,16 +71,18 @@ Day 2 Activity File: Incident Analysis with Kibana
 
  
 After creating your dashboard and becoming familiar with the search syntax, use these tools to answer the questions below:
+
 1.	Identify the offensive traffic.
 
 ○	Identify the traffic between your machine and the web machine:
-■	When did the interaction occur?
 
-The interaction occurred on 2021-12-14 03:00
+	■	When did the interaction occur?
 
-■	What responses did the victim send back?
+		The interaction occurred on 2021-12-14 03:00
 
-200, 207, 401, 404, 206, 304, 301
+	■	What responses did the victim send back?
+
+		200, 207, 401, 404, 206, 304, 301
 
 ■	What data is concerning from the Blue Team perspective?
 
