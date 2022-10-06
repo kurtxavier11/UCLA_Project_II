@@ -1,4 +1,4 @@
-# UCLA Project II - Red vs. Blue Engagement
+# UCLA Cyber Security Boot Camp Project II - Red vs. Blue Engagement
 ## by Kurt Anderson
 
 In this project I will work on a Red Team vs. Blue Team scenario in which I will play the roles of both Pentester and Security Operations Center Analyst.
