@@ -13,6 +13,7 @@ Complete the following to find the flag:
 ●	Discover the IP address of the Linux web server.
 	nmap -v 192.168.1.0/24 
   
+  ![nmap scan of 192.168.1.0/24](https://github.com/kurtxavier11/UCLA_Project_II/blob/main/images/nmap_scan.jpg)
   
 	192.168.1.90
 ●	Locate the hidden directory on the web server.
