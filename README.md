@@ -8,25 +8,38 @@ As the Red Team, I will attack a vulnerable VM within my created virtual environ
 As the Blue Team, I will use Kibana to review logs taken during the Red Team engagement. I will then use the logs to extract hard data and visulaizations for my report, using it to interpret my log data to suggest mitigation measures for each exploit that I've successfully performed as a Pentester.
 
 Day 1 Activity File: Red Team
-Instructions
+
 Complete the following to find the flag:
+
 ●	Discover the IP address of the Linux web server.
+
+Command:
+	
 	nmap -v 192.168.1.0/24 
   
+  ![nmap scan of 192.168.1.0/24](https://github.com/kurtxavier11/UCLA_Project_II/blob/main/images/nmap_scan.jpg)
+  
+IP address found:
   
 	192.168.1.90
+	
 ●	Locate the hidden directory on the web server.
-○	Hint: Use a browser to see which web pages will load, and/or use a tool like dirb to find URLs on the target site
 
- 
+I used dirb to enumerate any directories and identify the hidden folder.
+
+![dirb directory enumeration](https://github.com/kurtxavier11/UCLA_Project_II/blob/main/images/dirb_enumeration.jpg)
  
 ●	Brute force the password for the hidden directory using the hydra command:
-○	Hint: You may need to use gunzip to unzip rockyou.txt.gz before running Hydra.
-○	Hint: hydra -l <username> -P <wordlist> -s <port> -f -vV <victim.server.ip.address> http-get <path/to/secret/directory>
- 
- 
+
+![Hydra Brute Force](https://github.com/kurtxavier11/UCLA_Project_II/blob/main/images/hydra.jpg)
+
+Using the username and password I was able to log into the host and found a Personal Note:
+
+![Personal Note:](https://github.com/kurtxavier11/UCLA_Project_II/blob/main/images/personal_note.jpg)
+
 ●	Break the hashed password with the Crack Station website or John the Ripper.
  
+![Cracked Password:](https://github.com/kurtxavier11/UCLA_Project_II/blob/main/images/cracked_password.jpg)
 
 ●	Connect to the server via WebDav.
 ○	Hint: Look for WebDAV connection instructions in the file located in the secret directory. Note that these instructions may have an old IP Address in them, so you will need to use the IP address you have discovered.
